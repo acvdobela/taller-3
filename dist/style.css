@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente del cuerpo actualizada a Montserrat */
+    background-color: #faedcd; /* Color de fondo actualizado */
+    margin: 0;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-family: 'Limelight', cursive; /* Nueva fuente Limelight */
+    color: #283618; /* Color del título */
+    font-size: 2em; /* Tamaño más pequeño */
+    margin: 10px 0; /* Espacio reducido en la parte superior e inferior */
+}
+.cart-button {
+    background-color: #bc6c25; /* Color del botón del carrito */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.container {
+    display: flex; /* Cambiar a flex para organizar en columnas */
+    flex-direction: column; /* Organizar en una sola columna */
+    gap: 20px; /* Espaciado entre elementos */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+.habitacion {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #606c38; /* Color de fondo de las habitaciones */
+    transition: background-color 0.2s; /* Solo cambia el color de fondo */
+}
+.habitacion:hover {
+    cursor: pointer;
+    background-color: #bc6c25; /* Color del hover de las habitaciones */
+}
+.titulo {
+    font-size: 1.5em;
+    color: #fff;
+}
+.precio {
+    font-size: 1.2em;
+    color: #fff;
+}
+.descripcion {
+    font-size: 0.9em; /* Tamaño de fuente para la descripción */
+    color: #e0e0e0; /* Color de la descripción */
+    margin: 10px 0; /* Margen para separar la descripción */
+}
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cart-items {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.cart-summary {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.remove-btn {
+    color: red;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #bc6c25; /* Color del botón de reservar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

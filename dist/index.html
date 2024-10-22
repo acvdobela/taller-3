@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Taller 3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Primavera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener un archivo CSS separado -->
+</head>
+<body>
+
+    <div class="header">
+        <h1>Hotel Primavera</h1>
+        <button class="cart-button" onclick="toggleCart()">🛒 Carrito</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <h3>Elementos en el Carrito:</h3>
+        <ul id="cartList"></ul>
+        <div class="center-button">
+            <button onclick="reservar()">Reservar</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="habitacion" onclick="agregarAlCarrito('Habitación Sencilla')">
+            <img src="https://i.pinimg.com/enabled_hi/564x/ea/ee/7f/eaee7f16c689350e36a9eace272cf521.jpg" alt="Habitación Sencilla">
+            <div class="titulo">Habitación Sencilla</div>
+            <div class="precio">$50 por noche</div>
+            <div class="descripcion">Ideal para una estancia cómoda y tranquila.</div>
+        </div>
+        <div class="habitacion" onclick="agregarAlCarrito('Habitación Doble')">
+            <img src="https://i.pinimg.com/enabled_hi/564x/6c/43/33/6c4333596b50563f2a27084367282621.jpg" alt="Habitación Doble">
+            <div class="titulo">Habitación Doble</div>
+            <div class="precio">$80 por noche</div>
+            <div class="descripcion">Perfecta para parejas o amigos que viajan juntos.</div>
+        </div>
+        <div class="habitacion" onclick="agregarAlCarrito('Habitación Queen')">
+            <img src="https://i.pinimg.com/enabled_hi/564x/1d/15/70/1d157016a98e231376c19b198242f9f8.jpg" alt="Habitación Queen">
+            <div class="titulo">Habitación Queen</div>
+            <div class="precio">$100 por noche</div>
+            <div class="descripcion">Amplia y confortable para una mejor experiencia.</div>
+        </div>
+        <div class="habitacion" onclick="agregarAlCarrito('Habitación King')">
+            <img src="https://i.pinimg.com/564x/56/42/5d/56425dae373b5016991f9ae03f27f1d9.jpg" alt="Habitación King">
+            <div class="titulo">Habitación King</div>
+            <div class="precio">$120 por noche</div>
+            <div class="descripcion">Lujo y comodidad en un solo lugar.</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Vinculación al archivo JavaScript -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
